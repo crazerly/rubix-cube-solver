@@ -5,8 +5,8 @@ const capturedImg = document.getElementById('capturedImage');
 async function startCamera() {
     const constraints = {
     video: {
-        width: 1280,
-        height: 720,
+        width: 360,
+        height: 360,
         facingMode: "environment",
     },
     };
