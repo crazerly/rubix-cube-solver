@@ -1,3 +1,4 @@
+const startCameraBtn = document.getElementById('startCamera');
 const camVideo = document.getElementById("camVideo");
 const scanBtn = document.getElementById('scanCube');
 const capturedImg = document.getElementById('capturedImage');
@@ -32,6 +33,8 @@ function captureImage() {
   capturedImg.src = imageData;
 }
 
-startCamera();
+startCameraBtn.addEventListener('click', () => {
+  startCamera();  // Start camera after user interaction
+});
 
 scanBtn.addEventListener('click', captureImage);
